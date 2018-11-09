@@ -28,13 +28,18 @@ module.exports = () => layout(html`
     </div>
 
     <div class="form-group">
-    <label for="content" class="col-sm-2 control-label">Content</label>
-    <div class="col-sm-10">
-      <textarea id="content" name="content" class="form-control"/></textarea>
+      <label for="content" class="col-sm-2 control-label">Content</label>
+      <div class="col-sm-10">
+        <textarea id="content" name="content" class="form-control"/></textarea>
+      </div>
     </div>
-  </div>
 
-    <div>PLACEHOLDER FOR PAGE STATUS INPUT FIELD</div>
+    <div>
+      <label for="status" class="col-sm-2 control-label">Status</label>
+      <div class="col-sm-10">
+      <input id="status" name="status" type="text" class="form-control"/>
+      </div>
+    </div>
 
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">submit</button>
