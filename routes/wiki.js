@@ -1,4 +1,6 @@
 const router = require("express").Router();
+const addPage = require('../views/addPage');
+
 
 router.get("/", (req, res) => {
   try {
@@ -25,7 +27,7 @@ router.post("/", (req, res) => {
 
 router.get("/add", (req, res) => {
   try {
-    res.send("you are here: get /add");
+    res.send(addPage());
   } catch (err) {
 
 

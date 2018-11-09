@@ -20,9 +20,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/wiki', wikiRouter);
 //app.use('/user', userRouter);
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   //res.send('Hello World!');
-  res.send(layout(''));
+  res.redirect('/wiki');
+  //res.send(layout(''));
 
 })
 
